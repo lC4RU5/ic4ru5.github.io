@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personenverwaltung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personen anlegen</h1>
+        <form id="personForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Telefonnummer:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="age">Alter:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <button type="submit">Person hinzufügen</button>
+        </form>
+
+        <h2>Liste der Personen</h2>
+        <ul id="personList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
